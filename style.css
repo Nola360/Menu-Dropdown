@@ -26,10 +26,29 @@
   transition: all 2s ease;
 }
 
+/* Animates the bars to rotate */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+
 /* Nav bar transitions */
 .navbar-links {
   list-style-type: none;
   transition: all 2s ease;
+  height: 0; /* set the height of the link container to 0 to remain hidden*/
+  overflow: hidden; /* Hides the links */
+}
+
+/* adds the height of 200px when navbar-collapse class is active */
+.navbar-collapse {
+  height: 200px; 
 }
 
 .navbar-single-link {
